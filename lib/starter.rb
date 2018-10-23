@@ -141,14 +141,14 @@ end
 
 def return_results
 prompt_for_keyword
-  answer = get_user_input
-    results_menu(answer)
-      prompt_for_specific
-        item_number = get_item_number
-          prompt_for_quantity
-            quantity= get_quantity_num
-              select_result_and_quantity(answer,item_number, quantity)
-                add_cart
-                  answer = get_user_input
-                    answer_response(answer)
+answer = get_user_input
+results_menu(answer)
+prompt_for_specific
+item_number = get_item_number
+prompt_for_quantity
+quantity= get_quantity_num
+select_result_and_quantity(answer,item_number, quantity)
+add_cart
+answer = get_user_input
+answer_response(answer)
 end
